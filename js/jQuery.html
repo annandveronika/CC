@@ -1,0 +1,28 @@
+<html>
+<head>
+<style>
+.panel { 
+	border: 5px solid black;
+}
+.delete {
+	border: 10px solid yellow;
+	border-radius: 10px;
+}
+</style>
+<script type="text/javascript" src="jquery.js"></script>
+</head>
+<body>
+<div class="panel">Ну тип она должна будет исчезнуть эта фигень
+<div class="delete">Тут типа кнопочка удаления будет все дела</div>
+</div>
+<script>
+$(document).ready(function(){
+
+    $(".panel .delete").click(function(){
+        $(this).parents(".panel").animate({ opacity: "hide" }, "slow");
+    });
+
+});
+</script>
+</body>
+</html>
