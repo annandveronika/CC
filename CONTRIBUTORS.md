@@ -12,4 +12,4 @@
 <p>8(029)171-21-42 </p>
 <h1>Pavel Laykov</h1>
 <p>LaikovPavel@yandex.ru </p>
-<p>?8(029)696-99-57 </p>
+<p>8(029)696-99-57 </p>
