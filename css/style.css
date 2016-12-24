@@ -9,29 +9,23 @@ body {
 nav {
 	width: 100%;
 	position: fixed;
-	height: 60px;
+
 	background: #FFF;
-	padding: 15 0 0 0;
+	padding: 15 0 15 0;
 	outline: 0;
 
 }
-.leftNav {
+.leftNav, .rightNav  {
 	display: inline-block;
 	padding-right: 20px;
 	list-style-type: none;
 	padding-top:10px;
 }
-.rightNav {
-	display: inline-block;
-	padding-right: 20px;
-	list-style-type: none;
-	padding-top:10px;
-}
-.rebeltea {
+.rebeltea  {
 	font-size: 20px;
 	font-family: 'Chewy', cursive;
 }
-.navLink {
+.navLink,  .rightNav {
 	font-family: 'Niagara Solid Regular';
 	font-size: 12px;
 	color: #A4A4A4;
@@ -45,8 +39,9 @@ nav {
 /*Main page*/
 
 .main {
-	background-image: url('../img/bg2.jpg')!important;
+	background-image: url('../img/bg1.jpg')!important;
 	background-position: center !important;
+    background-size: cover !important;
 	height: 100% !important;
 	width: 100% !important;
 	display: block;
@@ -55,6 +50,7 @@ nav {
     margin: 0 auto;
 	margin-top: 200px;
 	display: none;
+   
 }
 .contener {
 	width: 100%;
@@ -119,8 +115,7 @@ span.tegs {
 
 /* Competition */
 div.second {
-	height: 1400;
-
+min-height: 100%;
 	background-image: url('../img/bg2.jpg')!important;
 	background-position: center !important;
 	width: 100% !important;
@@ -412,7 +407,9 @@ hr.hr5 {
 }
 
 /*Footer*/
-
+footer {
+    background-color: #f3f3e8;
+}
 .QA1 {
     text-align:center;
     padding:20px 0 20px 0;
@@ -421,7 +418,7 @@ hr.hr5 {
 
 // MODAL WINDOW//!!
 
-/* Стили относящиеся к модальному окну и содержанию */
+/*** Стили относящиеся к модальному окну и содержанию ***/
 .popup h1,
 .popup h2,
 .popup h3 {
