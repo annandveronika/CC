@@ -274,14 +274,29 @@
 
     </div>
     <section class="reg_form">
-        <h2 style="padding: 5px; text-align: center; color: #D59B42;">Here you may register</h2>
+        <h2>Here you may register</h2>
         <div class="form">
             <form action="#" method="get">
-                <input type="text" name="name" placeholder="Full name" class="name">
-                <input type="text" name="email" placeholder="Email" class="email">
-                <input type="text" name="phone" placeholder="Number" class="phone">
+                <input type="text" name="name" placeholder="Team name" class="name">
+                <input type="text" id="email" name="email" placeholder="E-mail your team or team leader" class="email">
+                <input type="text" name="phone" placeholder="Team lider phone number" class="phone">
                 <input type="password" id="password" name="password" placeholder="Enter password" class="password">
-                <textarea id="about" name="about" placeholder="About you" class="about"></textarea>
+                <textarea id="about" name="about" placeholder="About your team (The names of the team members)" class="about"></textarea>
+                <div class="quantity">
+                    <p>Select the number of your team members:
+                        <select>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                        </select>
+                    </p>
+                </div>
                 <input type="submit" value="Register" class="submit"/>
             </form>
         </div>

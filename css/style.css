@@ -416,12 +416,14 @@ padding: 10px;
 
 .reg_form h2{
     text-align: center;
+    padding: 5px; 
+    text-align: center; 
+    color: #D59B42;
 }
 .reg_form .form{
     width: 500px;
     margin: 0 auto;
 }
-
 
 .reg_form .form .name,
 .reg_form .form .password,
@@ -441,8 +443,8 @@ padding: 10px;
 }
 
 .reg_form .form .name,
-.reg_form .form .email,
 .reg_form .form .phone,
+.reg_form .form .email,
 .reg_form .form .password,
 .reg_form .form .about{
     padding: 18px 20px;
@@ -455,18 +457,32 @@ padding: 10px;
     outline: none;
 }
 .reg_form .form .name:focus,
-.reg_form .form .email:focus,
+.reg_form .form .email:focus,s
 .reg_form .form .phone:focus,
 .reg_form .form .password:focus,
 .reg_form .form .about:focus 
 {
-    border: 1px solid #D59B42; /* Рамка при получении фокуса */
+    border: 1px solid #D2691E; /* Рамка при получении фокуса */
    }
+
+.reg_form .form .quantity{
+    text-align: center;
+    color: #D59B42;
+    font-size: 20px;
+}
+
+.reg_form .form select{
+    color: #D59B42;
+    padding: 0px 5px;
+    outline: 0;
+}
+
+
 .reg_form .form .submit{
     background: #D59B42;
     padding: 10px 20px;
     border: 0!important;
-    margin-top: 20px;
+    margin-top: 10px;
 
     color: #fff;
     font-family: "raleway-regular", arial;
@@ -478,7 +494,7 @@ padding: 10px;
 
 .reg_form .form .submit:hover{
     cursor: pointer;
-    background: #D59B42;
+    background: #D2691E;
 }
 
 
@@ -538,7 +554,7 @@ color: #D59B42;
 .contact_form .form .subject:focus,
 .contact_form .form .msg:focus 
 {
-    border: 1px solid #D59B42; /* Рамка при получении фокуса */
+    border: 1px solid #D2691E; /* Рамка при получении фокуса */
    }
 .contact_form .form .submit{
     background: #D59B42;
@@ -556,5 +572,5 @@ color: #D59B42;
 
 .contact_form .form .submit:hover{
     cursor: pointer;
-    background: #D59B42;
+    background: #D2691E;
 }
