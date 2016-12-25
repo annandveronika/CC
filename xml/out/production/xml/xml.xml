@@ -1,0 +1,5 @@
+<company name="Cook Creatively">
+    <comand title="Rebel" name1="Anna" number1="1"  name2="Veronika" number2="2" name3="Aleksandra" number3="3" name4="Maksim" number4="4" name5="Pavel" number5="5"/> 
+    <comand title="Aliens" name1="Maria" number1="1"  name2="Roman" number2="2" name3="Ivan" number3="3" name4="Dmitriy" number4="4" name5="Sergei" number5="5"/> 
+    <comand title="Webiki" name1="Liza" number1="1"  name2="Artyom" number2="2" name3="Ksenia" number3="3" name4="Aleksandr" number4="4" name5="Nikita" number5="5"/> 
+</company>
