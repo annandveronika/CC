@@ -2,6 +2,7 @@ body {
 	padding: 0px !important;
 	margin: 0px !important;
 	display: block;
+	background-color: #f0f0f0;
 }
 
 /* Navigation*/
@@ -38,7 +39,7 @@ nav {
 
 /*Main page*/
 
-.main {
+#mainPage {
 	background-image: url('../img/bg1.jpg')!important;
 	background-position: center !important;
     background-size: cover !important;
@@ -46,7 +47,7 @@ nav {
 	width: 100% !important;
 	display: block;
 }
-.photo1 {
+.mainPhoto {
     margin: 0 auto;
 	margin-top: 200px;
 	display: none;
@@ -59,12 +60,24 @@ nav {
 
 /* Rules */
 
-div.first {
-	height: 1300;
-	background-color: white;
+#rulesLink .main {
     width: 100%;
+
 }
-div.div1 {
+.rulesTitle {
+	text-align: center;
+	font-weight: 800;
+	font-size: 30;
+	color: #00b2ee;
+	padding-top: 80px;
+
+}
+.rulesLine {
+	height: 3;
+	background: #00b2ee;
+	width: 125;
+}
+.tableHead {
 	background: #00b2ee;
 	font-size: 40;
 	width: 751;
@@ -74,55 +87,34 @@ div.div1 {
     margin: auto;
 }
 
-}
-.padding {
-		padding-top: 10px;
-
-}
-div.div2 {
+.tableBody {
 	border: 1px solid #00b2ee;
 	border-radius: 0px 0px 20px 20px;
 	width: 751;
 	text-align: left;
-	background-opacity: 0.5;
-	background-image: url('../img/123.gif')	no-repeat;
-	background-image: display: none;
     margin: auto;
+     margin-button:20px;
 
 }
-p.textrules {
+.textRules {
 	color: #00688b;
 	padding: 10 50 10 50;
 }
-h3.header1 {
-	text-align: center;
-	font-weight: 800;
-	font-size: 30;
-	color: #00b2ee;
-		padding-top: 100px;
-
-}
-hr.hr2 {
-	height: 3;
-	background: #00b2ee;
-	width: 125;
-}
-span.tegs {
+.tegs {
 	color: #00b2ee;
 	font-size: 20;
 	padding-left: 0;
 }
 
 /* Competition */
-div.second {
+#galleryLink  .main {
 min-height: 100%;
-	background-image: url('../img/bg2.jpg')!important;
-	background-position: center !important;
+	background-color: #27533b;
 	width: 100% !important;
 	display: block;
 
 }
-h3.header2 {
+.galleryTitle {
 	text-align: center;
 	font-weight: 800;
 	font-size: 30;
@@ -131,36 +123,19 @@ h3.header2 {
     text-shadow: #00bfff 2px 2px 0, #00bfff -2px -2px 0, 
                  #00bfff -1px 1px 0, #00bfff 1px -1px 0;
 }
-hr.hr3 {
+.galleryLine {
 	height: 3;
 	background: #00bfff;
 	width: 170;
 }
-.Img5 {
+.common {
+   	display: inline-block;
+ }
+.firstGalleryPhoto, .secondGalleryPhoto, .thirdGalleryPhoto, .fourthGalleryPhoto, .fifthGalleryPhoto {
 	display: none;
 }
-.Img1 {
-	display: none;
-}
-.Img2 {
-	display: none;
-}
-.Img3 {
-	display: none;
-}
-.Img4 {
-	display: none;
-}
-.superCommon {
-	display: inline-block;
-}
-.commonImg {
-	display: inline-block;
-}
-.commonImg1 {
-	display: inline-block;
-}
-.commonImg2 {
+
+.firstCommonImg, .secondCommonImg, .thirdCommonImg {
 	display: inline-block;
 }
 
@@ -345,7 +320,7 @@ hr.hr4 {
 }
 
 /*Contacts*/
-.fourth {
+#contactsLink .main {
 	background-image: url('../img/bg2.jpg')!important;
 	background-position: center !important;
 	height: 100% !important;
@@ -353,20 +328,6 @@ hr.hr4 {
 	display: block;
 	text-align: center;
 
-}
-h3.header4 {
-	text-align: center;
-	font-weight: 800;
-	font-size: 30;
-	color: #87ceff;
-    text-shadow: white 2px 2px 0, white -2px -2px 0, 
-                 white -2px 2px 0, white 2px -2px 0;
-	padding-top: 100px;
-}
-hr.hr5 {
-	height: 3;
-	background: #87ceff;
-	width: 180;
 }
 
    @font-face {
@@ -410,7 +371,7 @@ hr.hr5 {
 footer {
     background-color: #f3f3e8;
 }
-.QA1 {
+.footerInfo {
     text-align:center;
     padding:20px 0 20px 0;
 }
