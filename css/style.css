@@ -27,18 +27,20 @@ nav {
 	font-family: 'Chewy', cursive;
     color: #D59B42;
 }
-.navLink,  .rightNav {
+.navLink, 
+.rightNav {
 	font-family: 'Niagara Solid Regular';
 	font-size: 12px;
 	color: #71767f;
 	text-decoration: none;
 }
-.leftNav a:hover, .rightNav a:hover,  {
+.leftNav a:hover, 
+.rightNav a:hover {
 	color: #D59B42;
-	text-decoration: none;
+	text-decoration: underline;
 }
  .rebeltea:hover {
-    color: #71767f;
+    color: #D2691E;
     text-decoration: none;
 }
 /*Main page*/
@@ -457,7 +459,7 @@ padding: 10px;
     outline: none;
 }
 .reg_form .form .name:focus,
-.reg_form .form .email:focus,s
+.reg_form .form .email:focus,
 .reg_form .form .phone:focus,
 .reg_form .form .password:focus,
 .reg_form .form .about:focus 
