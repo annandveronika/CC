@@ -17,10 +17,14 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Responsive styles-->
     <link rel="stylesheet" href="css/responsive.css">
-    <!--JQuery-->
+   <!--JQuery-->
     <script type="text/javascript" src="js/jquery.js"></script>
 
     <script type="text/javascript" src="js/typed.js"></script>
+    <script type="text/javascript" src="js/include/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/MyScript.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="galleria/galleria-1.4.2.min.js"></script>
 </head>
 <body>
 
@@ -215,7 +219,25 @@
     <div class="main">
         <h3 class="galleryTitle">GALLERY</h3>
         <hr class="galleryLine">
-        <div class="common">
+        
+            <div class="galleria">
+                <img src="img/02.png">
+                <img src="img/03.png">
+                <img src="img/04.png">
+                <img src="img/06.png">
+                <img src="img/perez.png">
+                <img src="img/000.jpg">
+                <img src="img/001.jpg">
+                <img src="img/002.jpg">
+                <img src="img/003.jpg">
+                <img src="img/004.jpg">
+                <img src="img/005.jpg">
+                <img src="img/006.jpg">
+                <img src="img/007.jpg">
+                <img src="img/008.jpg">
+                <img src="img/009.jpg">
+            </div>
+            <!-- <div class="common">
             <div class="firstCommonImg">
                 <img src="img/02.png" class="firstGalleryPhoto">
                 <img src="img/03.png" class="secondGalleryPhoto">
@@ -239,8 +261,9 @@
                 <img src="img/008.jpg" class="fourthGalleryPhoto">
                 <img src="img/009.jpg" class="fifthGalleryPhoto">
             </div>
-        </div>
-    </div>
+            </div>
+        </div> -->
+    
 </section>
 <section class="contact_info clearfix" id="contactsLink">
     <div class="row main">
@@ -329,6 +352,7 @@
 </div>
 
 
+
 <script>
 function scrollToDiv(element,navheight){
     var offset = element.offset();
@@ -348,81 +372,63 @@ $('nav .scroll a').click(function(){
 
 
 $(document).ready(function(){
-	$("#galleryLink").mouseenter(function(){
-		$(".firstGalleryPhoto").fadeIn("slow", function(){
-			$(".secondGalleryPhoto").fadeIn("slow", function(){
-				$(".thirdGalleryPhoto").fadeIn("slow", function(){
-					$(".fourthGalleryPhoto").fadeIn("slow", function(){
-						$(".fifthGalleryPhoto").fadeIn("slow");
-					});
-				});
-			});
-		});
-	});
+    $("#galleryLink").mouseenter(function(){
+        $(".firstGalleryPhoto").fadeIn("slow", function(){
+            $(".secondGalleryPhoto").fadeIn("slow", function(){
+                $(".thirdGalleryPhoto").fadeIn("slow", function(){
+                    $(".fourthGalleryPhoto").fadeIn("slow", function(){
+                        $(".fifthGalleryPhoto").fadeIn("slow");
+                    });
+                });
+            });
+        });
+    });
 });
 
-$(document).ready(function(){
-$(".firstGalleryPhoto").click(function(){
-	$(this).animate({
-              marginLeft: '40%',
-              height: '300px',
-              width: '300px'
-	});
-	
-});
-});
 
 $(document).ready(function(){
-$(".firstGalleryPhoto").dblclick(function(){
-	$(this).animate({
-   			marginLeft: '0%',
-              height: '200px',
-              width: '200px'
-	});
-	
+    $("#mainPage").mouseenter(function(){
+        $(".mainPhoto").fadeIn(2500)
+    });
 });
-});
-$(document).ready(function(){
-	$("#mainPage").mouseenter(function(){
-		$(".mainPhoto").fadeIn(2500)
-	});
-});
-$(document).ready(function(){
-	$(".first").mouseenter(function(){
-		$(".div2").animate({
-			backgroundImage: 'opacity: 0.9'
-		})
-	});
-});
+Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+            Galleria.run('.galleria');
+// $(document).ready(function(){
+//  $(".first").mouseenter(function(){
+//      $(".div2").animate({
+//          backgroundImage: 'opacity: 0.9'
+//      })
+//  });
+// });
 
-$(document).ready(function(){
-	$(".fourth").mouseenter(function(){
-		$(".groupSelection1").fadeIn(2500)
-	});
-});
+// $(document).ready(function(){
+//  $(".fourth").mouseenter(function(){
+//      $(".groupSelection1").fadeIn(2500)
+//  });
+// });
 
-$(document).ready(function(){
-	$(".fourth").mouseenter(function(){
-		$(".groupSelection2").fadeIn(2500)
-	});
-});
+// $(document).ready(function(){
+//  $(".fourth").mouseenter(function(){
+//      $(".groupSelection2").fadeIn(2500)
+//  });
+// });
 
-$(document).ready(function(){
-	$(".fourth").mouseenter(function(){
-		$(".groupSelection3").fadeIn(2500)
-	});
-});
+// $(document).ready(function(){
+//  $(".fourth").mouseenter(function(){
+//      $(".groupSelection3").fadeIn(2500)
+//  });
+// });
 
-$(document).ready(function(){
-	$(".fourth").mouseenter(function(){
-		$(".groupSelection4").fadeIn(2500)
-	});
-});
+// $(document).ready(function(){
+//  $(".fourth").mouseenter(function(){
+//      $(".groupSelection4").fadeIn(2500)
+//  });
+// });
 
 
 //(function(){ 
-//	$(".fourth").mouseenter(function(){ 
-//		$(".groupSelection2").typed({ strings: ["Choose correct type"], typeSpeed: 50 }); }); });
+//  $(".fourth").mouseenter(function(){ 
+//      $(".groupSelection2").typed({ strings: ["Choose correct type"], typeSpeed: 50 }); }); });
 
 
 
