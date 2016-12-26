@@ -230,7 +230,7 @@ min-height: 100vh;
 }
 
 /*Contacts*/
-#contactsLink .main {
+#contactsLink .contact {
     min-height: 100vh;
     display: block;
     text-align: center;
@@ -270,6 +270,26 @@ min-height: 100vh;
     letter-spacing: 1px;
 }
 
+.contact_info .social{
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    margin-right: 35px;
+}
+
+
+.contact_info ul.social li{
+    list-style: none;
+    display: inline;
+    margin-right: 10px;
+}
+
+.contact_info ul.social li:last-child{
+    margin-right: 0;
+}
+
+
+
 /*Footer*/
 footer {
     background-color: #f3f3e8;
@@ -278,6 +298,7 @@ footer {
     text-align:center;
     padding:20px 0 20px 0;
 }
+
 
 
 // MODAL WINDOW//!!
