@@ -2,10 +2,74 @@
 
     <xsl:template match="/">
         <html>
+            <head>
+                <title>Registered Teams</title>
+                <link rel="stylesheet" href="css/bootstrap.css"/>
+                <link rel="stylesheet" href="css/style.css"/>
+                <style>
+                    td {
+                        width:10vw;
+                        height:5vh;
+                    }
+                    h1, h2, h3 {
+                        color: #D59B42;
+                        font-family:Montserrat;
+                    }
+                    table {
+                    font-family:Oswald;
+                    }
+                </style>
+            </head>
             <body>
-                <h1>Registered Teams
-                </h1>
+                <nav>
+                    <div class="row">
+                        <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+                        </div>
+                        <div class="scroll  col-sm-1 col-xs-1 col-md-1 col-lg-1">
+                            <div class="rebelNav">
+                                <a href="index.html#mainPage" class="rebeltea">RebelTea</a>
+                            </div>
+                        </div>
+                        <div class="scroll col-sm-6 col-xs-6 col-md-6 col-lg-6">
+                            <div class="leftNav">
+                                <a href="index.html#aboutLink" class="navLink">ABOUT</a>
+                            </div>
+
+                            <div class="leftNav">
+                                <a href="index.html#rulesLink" class="navLink">RULES</a>
+                            </div>
+                            <div class="leftNav">
+                                <a href="index.html#winnersLink" class="navLink">WINNERS</a>
+                            </div>
+                            <div class="leftNav">
+                                <a href="index.html#galleryLink" class="navLink">GALLERY</a>
+                            </div>
+                            <div class="leftNav">
+                                <a href="index.html#contactsLink" class="navLink">CONTACTS</a>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+                            <a class="rightNav" href="index.html#win2" role="button" data-toggle="modal">REGISTRATION</a>
+                            <a class="rightNav" href="index.html#win3" role="button" data-toggle="modal">SEND US A MESSAGE</a>
+
+                        </div>
+                        <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
+                        </div>
+                    </div>
+                </nav>
+                <section style="padding-top: 80px; ">
+                    <div class="row">
+                        <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+                        </div>
+                    <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6" style="text-align:center;">
+                <h1>Registered Teams</h1>
                 <xsl:apply-templates select="//comand"/>
+                    </div>
+                    <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+                    </div>
+                    </div>
+                </section>
             </body>
         </html>
     </xsl:template>
@@ -14,12 +78,12 @@
             <h2>
                 <xsl:value-of select="@title"/>
             </h2>
-            <h2>
+            <!--<h2>
                 <xsl:value-of select="generate-id(.)"/>
-            </h2>
+            </h2>-->
 
 
-            <table  border="1" bordercolor="black">
+            <table border="1" bordercolor="black" style="margin: 0 auto; text-align:center;">
                 <thead>
                     <tr>
                         <td>№</td>
@@ -30,6 +94,7 @@
                     <xsl:apply-templates select="//comand[@title=current()/@title]" mode="table"/>
                 </tbody>
             </table>
+
         </xsl:if>
     </xsl:template>
     <xsl:template match="comand" mode="table">
