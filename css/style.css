@@ -15,7 +15,9 @@ body {
     background-color: #f0f0f0;
 }
 
+
 /* Navigation*/
+
 
 nav {
     width: 100%;
@@ -60,7 +62,9 @@ nav {
     text-decoration: none;
 }
 
+
 /*Main page*/
+
 
 #mainPage {
     background-image: url('../img/bg1.jpg')!important;
@@ -77,7 +81,9 @@ nav {
    
 }
 
+
 /*About*/
+
 
 #aboutLink .main {
     min-height:100vh;
@@ -106,7 +112,9 @@ nav {
     color: #D59B42;
 }
 
+
 /* Rules */
+
 
 #rulesLink .main {
     min-height: 100vh;
@@ -157,7 +165,10 @@ nav {
     padding-left: 0;
 }
 
+
 /* Gallery */
+
+
 #galleryLink  .main {
 min-height: 100vh;
     display: block;
@@ -187,7 +198,10 @@ min-height: 100vh;
     border-radius:12px;
 }
 
+
 /* Winners*/
+
+
 #winnersLink .main {
     min-height: 100vh;
     text-align: center;
@@ -234,7 +248,10 @@ min-height: 100vh;
     letter-spacing: 1px;
 }
 
+
 /*Contacts*/
+
+
 #contactsLink .contact {
     min-height: 100vh;
     display: block;
@@ -246,8 +263,6 @@ min-height: 100vh;
 
 
 }
-
-
 .titleContacts {
     padding-top: 12%;
 }
@@ -294,8 +309,9 @@ min-height: 100vh;
 }
 
 
-
 /*Footer*/
+
+
 footer {
     background-color: #f3f3e8;
 }
@@ -307,6 +323,7 @@ footer {
 
 
 // MODAL WINDOW//!!
+
 
 /*** Стили относящиеся к модальному окну и содержанию ***/
 .popup h1,
