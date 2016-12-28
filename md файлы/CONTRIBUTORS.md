@@ -13,3 +13,6 @@
 <h1>Pavel Laykov</h1>
 <p>LaikovPavel@yandex.ru </p>
 <p>8(029)696-99-57 </p>
+<h1>Pavel Komarovsky</h1>
+<p>k.p.n.super@gmail.com </p>
+<p>8(025)763-58-08 </p>
