@@ -31,7 +31,6 @@ nav {
 .leftNav, .rightNav  {
     display: inline-block;
     padding-right: 20px;
-    list-style-type: none;
     padding-top:10px;
 }
 .rebeltea  {
@@ -231,7 +230,6 @@ min-height: 100vh;
 }
 .titleWinners{
     color: #D59B42;
-    
     font-family: "raleway-semibold", arial;
     font-weight: bold;
     font-size: 30px;
@@ -459,13 +457,7 @@ padding: 10px;
 .aboutTeg {
 	color: #4C0B5F;
 }
-.photo3 {
-	z-index: 2;
-}
-.photo1 {
-	z-index: 3;
 
-}
 
 
 
